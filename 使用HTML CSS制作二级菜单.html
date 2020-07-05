@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>使用HTML+CSS制作二级菜单</title>
+	<!-- 链接到外部样式表 -->
+	<link rel="stylesheet" type="text/css" href="CSS1.css" />
+	<!-- 设置所有超链接单击的时候的打开方式为在框架"isFrame"中打开 -->
+	<base target="isFrame" />
+</head>
+
+<body>
+	<!-- 顶部div区域，存放横向导航栏 -->
+	<div class="topMenu">
+		<!-- 一级菜单 -->
+		<ul>
+			<!-- 二级菜单:主页 -->
+			<li class="dropdown">
+				<a href="https://codewyx.github.io/music/zy.html">
+					主页
+				</a>
+				<ul class="dropdown-content">
+				</ul>
+			</li>
+			<!-- 二级菜单:我的网站 -->
+			<li class="dropdown">
+				<a href="">
+					我的网站
+				</a>
+				<ul class="dropdown-content">
+					<li>
+						<a href="https://codewyx.github.io/wyx/">王翊轩的小站</a>
+					</li>
+					<li>
+						<a href="https://codewyx.github.io/logo/">LOGO中文库</a>
+					</li>
+					<li>
+						<a href="tencent://Message/?uin=2257924320">王翊轩的QQ</a>
+					</li>
+
+				</ul>
+			</li>
+			<!-- 二级菜单:音乐 -->
+			<li class="dropdown">
+				<a href="">
+					音乐
+				</a>
+				<ul class="dropdown-content">
+					<li>
+						<a href="https://codewyx.github.io/music/hhg.html">好汉歌</a>
+					</li>
+				</ul>
+			</li>
+			<!-- 右浮动的一级菜单选项:王翊轩的编程猫 -->
+			<li id="baiDu">
+				<a href="https://shequ.codemao.cn/user/5533459">
+					我的编程猫
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+	<!-- 主要内容的div区域，存放网站页面的框架 -->
+	<div class="mainContent">
+		<!-- 显示在菜单中点击的链接用的框架，默认打开主页.HTML(src="https://codewyx.github.io/music/zy.html") -->
+		<iframe name="isFrame" ></iframe>
+	</div> 
+	
+</body>
+
+</html>
